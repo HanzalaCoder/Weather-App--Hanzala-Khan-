@@ -4,12 +4,242 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App Hanzala Khan</title>
-    <link rel="icon" type="image/png"  href="./assets/download.ico">
+    <link rel="icon" type="image/png"  href="./assets/weather-app.png">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://kit.fontawesome.com/d9985ea156.js" crossorigin="anonymous" defer></script>
     <script src="script,.js" defer></script>
 </head>
 <body>
+    <section class="container">
+        <div class="main-container">
+            <form class="search-box">
+                <input class="input" type="text" required placeholder="Type in city You Want to search for">
+                <button type="submit" class="submit-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+        
+        <h3 class="city"></h3>
+        <div class="img-container">
+            <div class="img">
+                 <i class="fa-solid fa-cloud-sun-rain"></i>
+                 <div class="cloud-text">
+                    
+                </div>
+            </div>
+            <div class="img">
+                <i class="fa-sharp fa-solid fa-temperature-three-quarters"></i>
+                <div class="cloud-text">
+                </div>
+            </div>
+            
+        </div>
+        <div class="info-container">
+            <div class="flex">
+                <span class="icon"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i></span>
+                <span class="text"> Feels like: </span>
+            </div>
 
+            <div class="flex">
+                <span class="icon"><iconify-icon icon="wi:humidity" style="font-size: 1.8rem;"></iconify-icon></span>
+                <span class="text"> Humidity: </span>
+            </div>
+
+            <div class="flex">
+                <span class="icon"><iconify-icon icon="carbon:pressure-filled" style="font-size: 1.8rem;"></iconify-icon></span>
+                <span class="text"> Pressure: </span>
+            </div>
+            <div class="flex">
+                <span class="icon"><i class="fa-solid fa-eye"></i></span>
+                <span class="text"> Visibility : </span>
+            </div>
+
+            <div class="flex">
+                <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                <span class="text"> Air Quality: </span>
+            </div>
+
+            
+
+            <div class="flex">
+                <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                <span class="text"> wind speed: </span>
+            </div>
+            <div class="flex">
+                <span class="icon"><i class="fa-regular fa-sun"></i></span>
+                <span class="text"> sunrise: </span>
+            </div>
+            <div class="flex">
+                <span class="icon"><i class="fa-solid fa-sun"></i></span>
+                <span class="text"> Sunset: </span>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="second-container">
+        <section class="cards">
+            <div class="card">
+                <div class="time flex2">
+                    <h4 class="day"><i class="fa-solid fa-calendar-days" style="font-size: 1.8rem;"></i></h4>
+                    <h4 class="date"> Date : </h4>
+                </div>
+                
+                <div class="forcast-temp flex2">
+                    <span class="icon"><iconify-icon icon="carbon:temperature-hot" style="font-size: 1.8rem;"></iconify-icon> </span>
+                    <div class="text">
+                        Day Temp :
+                    </div>
+                </div>
+                <div class="forcast-temp flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i></span>
+                    <div class="text"> Night Temp :
+                    </div>
+                </div>
+                <div class="flex2">
+                    <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                    <span class="text"> Air Quality : </span>
+                </div>
     
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> Humidity : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> wind speed : </span>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="time flex2">
+                    <h4 class="day"><i class="fa-solid fa-calendar-days" style="font-size: 1.8rem;"></i></h4>
+                    <h4 class="date"> Date : </h4>
+                </div>
+                
+                <div class="forcast-temp flex2">
+                    <span class="icon"><iconify-icon icon="carbon:temperature-hot" style="font-size: 1.8rem;"></iconify-icon> </span>
+                    <div class="text">
+                        Day Temp :
+                    </div>
+                </div>
+                <div class="forcast-temp flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i></span>
+                    <div class="text"> Night Temp :
+                    </div>
+                </div>
+                <div class="flex2">
+                    <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                    <span class="text"> Air Quality : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> Humidity : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> wind speed : </span>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="time flex2">
+                    <h4 class="day"><i class="fa-solid fa-calendar-days" style="font-size: 1.8rem;"></i></h4>
+                    <h4 class="date"> Date : </h4>
+                </div>
+                
+                <div class="forcast-temp flex2">
+                    <span class="icon"><iconify-icon icon="carbon:temperature-hot" style="font-size: 1.8rem;"></iconify-icon> </span>
+                    <div class="text">
+                        Day Temp :
+                    </div>
+                </div>
+                <div class="forcast-temp flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i></span>
+                    <div class="text"> Night Temp :
+                    </div>
+                </div>
+                <div class="flex2">
+                    <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                    <span class="text"> Air Quality : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> Humidity : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> wind speed : </span>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="time flex2">
+                    <h4 class="day"><i class="fa-solid fa-calendar-days" style="font-size: 1.8rem;"></i></h4>
+                    <h4 class="date"> Date : </h4>
+                </div>
+                
+                <div class="forcast-temp flex2">
+                    <span class="icon"><iconify-icon icon="carbon:temperature-hot" style="font-size: 1.8rem;"></iconify-icon> </span>
+                    <div class="text">
+                        Day Temp :
+                    </div>
+                </div>
+                <div class="forcast-temp flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i></span>
+                    <div class="text"> Night Temp :
+                    </div>
+                </div>
+                <div class="flex2">
+                    <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                    <span class="text"> Air Quality : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> Humidity : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> wind speed : </span>
+                </div>
+            </div> 
+            <div class="card">
+                <div class="time flex2">
+                    <h4 class="day"><i class="fa-solid fa-calendar-days" style="font-size: 1.8rem;"></i></h4>
+                    <h4 class="date"> Date : </h4>
+                </div>
+                
+                <div class="forcast-temp flex2">
+                    <span class="icon"><iconify-icon icon="carbon:temperature-hot" style="font-size: 1.8rem;"></iconify-icon> </span>
+                    <div class="text">
+                        Day Temp :
+                    </div>
+                </div>
+                <div class="forcast-temp flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-temperature-three-quarters"></i></span>
+                    <div class="text"> Night Temp :
+                    </div>
+                </div>
+                <div class="flex2">
+                    <span class="icon"><i class="fa-solid fa-wind"></i></span>
+                    <span class="text"> Air Quality : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> Humidity : </span>
+                </div>
+    
+                <div class="flex2">
+                    <span class="icon"><i class="fa-sharp fa-solid fa-wind"></i></span>
+                    <span class="text"> wind speed : </span>
+                </div>
+            </div>  
+        </section>
+
+
+    </section>
 </body>
 </html>
