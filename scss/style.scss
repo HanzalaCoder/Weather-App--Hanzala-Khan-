@@ -99,6 +99,8 @@ body {
 
 .text {
     color: $firstColor;
+    line-break: loose;
+   
 }
 
 .img-container {
@@ -116,11 +118,12 @@ body {
     text-align: center;
 }
 
-.cloud-text {
+.temp-text,.cloud-text {
     color: $firstColor;
     text-transform: capitalize;
     font-size: 1.5rem;
 }
+
 
 .cards {
     display: grid;
