@@ -103,6 +103,12 @@ body {
    
 }
 
+.forcast {
+    text-align: center;
+    color: $firstColor;
+    font-size: 2.5rem;
+}
+
 .img-container {
     width: 90%;
     margin: 1rem auto;
@@ -162,5 +168,45 @@ body {
 .date {
     color: $firstColor;
 }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(37, 32, 32, 0.7); /* Semi-transparent black overlay */
+    z-index: 9999; /* Make sure the overlay is on top of other elements */
+    display: grid;
+    place-items: center;
+    display: none;
+}
+
+.content {
+    width: 50%;
+    max-width: 500px; 
+    background-color: $secondColor;
+    padding: 1rem;
+    border-radius: 20px;
+    border:  1px solid $firstColor;
+    color: $firstColor;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+        width: 50%;
+        padding: .6em 1em;
+        background-color: $firstColor;
+        color: $thirdColor;
+        border-radius: 20px;
+    }
+}
+
+.errortext {
+    text-align: center
+}
+
 
 @import "media";

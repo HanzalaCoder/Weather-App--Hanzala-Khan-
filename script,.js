@@ -11,6 +11,16 @@ let UrlForcast = baseUrlForcast + "appId=" + apiKey +"&q="  /* +  city */
 const form = document.querySelector(".search-box")
 const input = document.querySelector(".input")
 const inputCity = document.querySelector(".city")
+const  overlay = document.querySelector(".overlay")
+const btnError = document.querySelector(".btn")
+
+btnError.addEventListener("click",()=> {
+    overlay.style.display = "none"
+    input.value = ""
+})
+
+
+
 form.addEventListener("submit",(e) => {
     main(e)
 
@@ -49,7 +59,7 @@ function SendRequest(cityName) {
        
     })
     .catch(e => {
-       console.log(e)
+       overlay.style.display = "grid"
     });
 }
 
@@ -141,7 +151,7 @@ function sendForcastRequest(cityName) {
         updataForcastScreen(data)
     })
     .catch(e => {
-        console.log(e)
+        return 
      });
 }
 
