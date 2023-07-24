@@ -180,7 +180,7 @@ function updataForcastScreen(data) {
         const maxTemp = "Max " + kelvinToCelcius(datalist[i].main["temp_max"]) + "C"
         minMAxText.textContent = minTemp + "  " + maxTemp
 
-        cloudText.textContent = "Weather "  + datalist[i].weather[0]["description"]
+        cloudText.textContent = "Weather :"  + datalist[i].weather[0]["description"]
 
         windText.textContent = "Wind Speed : "  + datalist[i].wind["speed"] + "m/s"
 
