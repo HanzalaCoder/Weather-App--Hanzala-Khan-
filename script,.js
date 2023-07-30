@@ -22,12 +22,10 @@ btnError.addEventListener("click",()=> {
 document.addEventListener("DOMContentLoaded" , () => {
     const items = localStorage.getItem("city")
     if(items) {
-        form.preventDefault()
         SendRequest(items)
         sendForcastRequest(items)
     } else {
         const defaultcity = "ohio"
-        form.preventDefault()
         SendRequest(defaultcity)
         sendForcastRequest(defaultcity)
         
