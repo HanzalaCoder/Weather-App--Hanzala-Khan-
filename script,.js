@@ -19,6 +19,21 @@ btnError.addEventListener("click",()=> {
     input.value = ""
 })
 
+document.addEventListener("DOMContentLoaded" , () => {
+    const items = localStorage.getItem("city")
+    if(items) {
+        form.preventDefault()
+        SendRequest(items)
+        sendForcastRequest(items)
+    } else {
+        const defaultcity = "ohio"
+        form.preventDefault()
+        SendRequest(defaultcity)
+        sendForcastRequest(defaultcity)
+        
+    }
+})
+
 
 
 form.addEventListener("submit",(e) => {
@@ -31,9 +46,9 @@ form.addEventListener("submit",(e) => {
 function main(foam) {
     foam.preventDefault()
     let value = validateName(input.value)
+    localStorage.setItem("city",value)
     SendRequest(value)
     sendForcastRequest(value)
-    
 }
 
 
@@ -86,7 +101,7 @@ function updataScreen(data) {
     const temperature   =  kelvinToCelcius(data.main["temp"])
     tempText.textContent = temperature + " Celsius"
 
-    feelslikeText.textContent =  "Feels like : "  +kelvinToCelcius(data.main["feels_like"]) + " Celsius"
+    feelslikeText.textContent =  "Feels like : "  + kelvinToCelcius(data.main["feels_like"]) + " Celsius"
 
     const minTemp = "Min " + kelvinToCelcius(data.main["temp_min"]) + "C"
     const maxTemp = "Max " + kelvinToCelcius(data.main["temp_max"]) + "C"
